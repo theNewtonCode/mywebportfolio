@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utilities.css">
+    <script src="mainjs.js"></script>
+
+    <!-- javascript code for sidebar pop -->
+    <script>
+    let x = true;
+    function hello(){
+        if(x==false){
+            document.getElementById("side").style.display = 'none';
+            x=true;
+        }
+        else{
+            document.getElementById("side").style.display = 'block';
+            x=false;
+        }
+    }
+
+      </script>
+</head>
+<body>
+    <header class="alignc headanim" id="headindex">
+        <div class="nav">
+            <nav class="alignc fontmain">
+                    <div class="alignc social fontmain headanim" onclick="hello()">
+                        <!-- social icon is placed here -->
+                        <img src="/imgs/connect_icon.webp">SOCIAL
+                    </div>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/history.html">History</a></li>
+                    <li><a href="/work.html">Work</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="searchbar alignc">
+            <input type="text" id="input1" placeholder="Search about me">
+            <img src="/imgs/searchicon.png" alt="searchicon">
+        </div>
+    </header>
+    <main>
+        <div class="sidebar fontmain" id="side">
+            <ul> 
+                <li class="bodbot"><img src="/imgs/li.png"><a href="https://www.linkedin.com/in/abhyuday-rai-214962225/">LinkedIn</a></li>
+                <li class="bodbot"><img src="/imgs/gits.png"><a href="https://github.com/theNewtonCode">GitHub</a></li>
+                <li class="bodbot"><img src="/imgs/ig.webp"><a href="https://www.instagram.com/the_abhyuday/">Instagram</a></li>
+                <li><img src="/imgs/yt.webp"><a href="https://www.youtube.com/channel/UC_X2pRcQN0jFHBOWuBxiwsw">YouTube</a></li>
+            </ul>
+        </div>
+        
+       <div class="container">
+
+           <div class="intro alignc">
+               <div class="myintroduction">
+                   <h2 class="fontmain2">Hi, I am Abhyuday</h2>
+                   <h4 class="fontmain2">BTech CSE 2<sup>nd</sup> Year, Student at Bennett University</h4>
+                   <br><br>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut delectus consequatur veritatis beatae sunt, pariatur praesentium quas ea architecto ut porro obcaecati atque aliquam soluta dignissimos fugiat accusamus voluptas, aliquid impedit perspiciatis nesciunt, quam laborum maxime! Provident rem quasi, ipsum dolores optio necessitatibus qui deleniti esse. Fugit, nam dignissimos tempora est culpa ex quia beatae?
+                    lorem566</p>
+                    <br>
+                    <div class="pictures fontmin">Wanna see more pictures of mine?
+                        <button class="fontmain" id="but" onclick="comeon()">Click here</button>
+                    </div>
+               </div>
+            <div class="myimg">
+                <img src="/imgs/myimg.jpg" alt="my picture">
+            </div>
+           </div>
+           <div class="images" id="imag">
+            <script>
+                function exit(){
+                    document.getElementById("imag").style.display="none";
+                }
+                function comeon(){
+                    document.getElementById("imag").style.display="flex";
+                }
+            </script>
+            <button id="exit" onclick="exit()">X</button>
+            <img src="/imgs/abhy.jpg" alt="img1" class="d2">
+            <img src="/imgs/abhy.jpg" alt="img2" class="d1">
+            <img src="/imgs/abhy.jpg" alt="img3" class="d3">
+        </div>
+       </div>
+    </main>
+    <footer class="headanim">
+        <div class="fontmain headanim">
+            Copyrights &copy; Ethercode | All rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

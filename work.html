@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="extra pages.css">
+
+<script>
+        function changeicon1(){
+            document.getElementById('homeicon').src='/imgs/home.png'
+        }
+        function changeicon2(){
+            document.getElementById('homeicon').src='/imgs/home2.png'}
+</script>
+</head>
+<body class="workhtml">
+    <header id="workh">
+        <div class="heading">
+            <h1>
+                Here's what i love doing and have done yet
+            </h1>
+        </div>
+        <div class="gotolinks">
+            <nav>
+                <ul>
+                    <li><a href="/index.html" onmouseenter="changeicon1()" onmouseleave="changeicon2()"><img src="imgs/home2.png" alt="home" height="30px" id="homeicon"></a></li>
+                    <li><a href="#java">Java</a></li>
+                    <li><a href="#python">Python</a></li>
+                    <li><a href="#web">Web Devop</a></li>
+                    <li><a href="#general">General</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="workcontainer">
+            <div class="images">
+                <img src="/imgs/hell.jpg" alt="img1" class="d2">
+                <img src="/imgs/hell.jpg" alt="img2" class="d1">
+                <img src="/imgs/hell.jpg" alt="img3" class="d3">
+            </div>
+            <div id="java">
+                <h3>My Works in Java</h3>
+                <hr>
+            </div>
+            <div id="python">
+                <h3>My works in Python</h3>
+                <hr>
+            </div>
+            <div id="web">
+                <h3>My works in Web development</h3>
+                <hr>
+            </div>
+            <div id="general">
+                <h3>What I also do</h3>
+                <hr>
+            </div>
+        </div>
+    </main>
+    <footer class="footw">
+        <div class="foot">
+            Copyrights &copy; Ethercode | All rights Reserved
+        </div>
+    </footer>
+</body>
+</html>

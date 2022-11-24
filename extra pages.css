@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+/* font-family: 'Edu SA Beginner', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* font-family: 'Playfair Display', serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+.workhtml{
+    background-image: url("/imgs/work.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 350px;
+}
+#workh, .hist, .conth{
+    z-index: 1;
+    display: grid;
+    background-color: rgb(48, 154, 158);
+    justify-content: center;
+    padding-top: 20px;
+    grid-template-rows: 50px 50px;
+    grid-row-gap: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: sticky;
+    top: 0;
+    min-height: 80px;
+    height: 100px;
+}
+.heading h1, .hist h1, .conth h1{
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Varela Round', sans-serif; 
+    font-size: 32px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+    margin: auto 3vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    text-transform: uppercase;
+    font-size: small;
+}
+.gotolinks a:hover{
+    color: coral;
+}
+.workcontainer{
+    margin:15px 20px;
+    display: grid;
+    grid-template-rows: 500px 300px 300px 300px 340px;
+    grid-row-gap: 10px;
+}
+
+.images{
+    background-color: burlywood;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.images img{
+    height: 500px;
+    display: block;
+}
+.d1{
+    animation: slide1 8s forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.d2{
+    animation: slide2 8s forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.d3{
+    animation: slide3 8s forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#java{
+    margin-top: 20px;
+    background-color: rgb(255, 0, 0);
+}
+#python{
+    background-color: rgb(7, 18, 220);
+}
+#web{
+    background-color: chartreuse;
+}
+#general{
+    background-color: rgb(211, 17, 179);
+}
+.workcontainer div h3{
+    color: white;
+}
+.footw ,.histf, .contf{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(48, 154, 158);
+    min-height: 50px;
+    height: 15vh;
+}
+.foot, .histf div, .contf div{
+    margin-top: 5vh;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+}
+@media screen and (orientation: portrait), (max-width: 500){
+    #workh{
+        height: 12vh;
+    }
+    #workh ul li{
+        margin: auto 2vw;
+    }
+    .heading h1{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif; 
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    footer{
+        height: 10vh;
+    }
+    .workhtml{
+        background-image: url("/imgs/workp.jpg");}
+}
+@keyframes slide1 {
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(1250px);
+    }
+    100%{
+        transform: translateX(2500px);
+    } 
+}
+@keyframes slide2 {
+    0%{
+        transform: translateX(-500px);
+    }
+    50%{
+        transform: translateX(750px);
+    }
+    100%{
+        transform: translateX(1900px);
+    } 
+}
+@keyframes slide3 {
+    0%{
+        transform: translateX(-2500px);
+    }
+    50%{
+        transform: translateX(-2000px);
+    }
+    100%{
+        transform: translateX(-750px);
+    } 
+}
+
+/* history css starts here */
+.hist{
+    background-color: rgb(251, 167, 33);
+}
+.histf, .histf div{
+    background-color: rgb(251, 167, 33);
+    color: white;
+}
+.histo a:hover{
+    color: rgb(18, 18, 245);
+}
+.histcontainer{
+    margin:15px 20px;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-row-gap: 10px;
+}
+#secscl{
+    margin-top: 20px;
+    background-color: rgb(255, 0, 0);
+}
+#hghscl{
+    background-color: rgb(7, 18, 220);
+}
+#intr{
+    background-color: chartreuse;
+}
+#col{
+    background-color: rgb(211, 17, 179);
+}
+.histcontainer div img{
+    height: 240px
+}
+.histcontainer div h3{
+    font-size: 25px;
+}
+.histcontainer div div{
+    display: flex;
+    justify-content: center;
+}
+/* css for contact html starts here */
+.conth, .contf{
+    background-color: rgb(255, 0, 166);
+}
+.conth div{
+    display: flex;
+    justify-content: center;
+}
+.conth nav a{
+    color: black;
+}
+.conth nav ul li a:hover{
+    color: yellow;
+}
+.conth h1{
+    color: black;
+}
+.contcontainer{
+    background-image: url();
+    height: 80vh;
+    min-height: 400px;
+}
+.contf div{
+    color: black;
+}

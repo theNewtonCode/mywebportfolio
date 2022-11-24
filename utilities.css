@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+/* font-family: 'Edu SA Beginner', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Varela+Round&display=swap');
+/* font-family: 'Varela Round', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* font-family: 'Playfair Display', serif; */
+
+.fontmin{
+    font-family: 'Edu SA Beginner', cursive;
+font-size:larger;
+color: rgb(78, 78, 78);
+}
+.fontmain{
+   font-family: 'Varela Round', sans-serif; 
+   font-size: smaller;
+}
+.fontmain2{
+    font-family: 'Playfair Display', serif;
+}
+.alignc{
+    align-items: center;
+}
+nav, a{
+
+    text-decoration: none;
+    color: white;
+}
+.bodbot{
+    border-bottom: 1px solid white;
+    border-color: rgba(255, 255, 255, 0.556);
+}
+/* background images */
+body{
+    background-image: url("/imgs/back.bmp.png");
+}
+.pictures button{
+    background-image: url("/imgs/backbutton.png");
+    color: white;
+    box-shadow: rgba(15, 58, 249, 0.467) 5px 5px, rgba(27, 165, 251, 0.204) 10px 10px;
+    border: 2px solid black;
+}
+.myintroduction h4{
+    color: rgba(0, 0, 0, 0.545);
+}
